@@ -11,8 +11,11 @@ do {
   numOfCells = order * order;
 } while (order > 100);
 
+let gridDiv;
+// gridDiv.className = "grid-div";
+
 for (let i = 0; i < numOfCells; i++) {
-  const gridDiv = document.createElement("div");
+  gridDiv = document.createElement("div");
   gridDiv.className = "grid-div";
   const widh = 400 / order;
   gridDiv.style.width = `${widh}px`;
@@ -20,3 +23,30 @@ for (let i = 0; i < numOfCells; i++) {
 }
 
 body.appendChild(container);
+
+const gribular = document.querySelectorAll(".grid-div");
+
+gribular.forEach((grib) => {
+  grib.addEventListener("mousemove", () => {
+    const colors = [
+      "black",
+      "silver",
+      "gray",
+      "maroon",
+      "red",
+      "purple",
+      "fuchsia",
+      "green",
+      "lime",
+      "olive",
+      "yellow",
+      "navy",
+      "blue",
+      "teal",
+      "aqua",
+    ];
+    grib.style.backgroundColor = `${
+      colors[Math.floor(Math.random() * colors.length)]
+    }`;
+  });
+});
