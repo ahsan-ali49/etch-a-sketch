@@ -1,0 +1,23 @@
+body {
+  margin: 10px;
+  background-color: whitesmoke;
+}
+
+.main-container {
+  background-color: white;
+  border: 5px solid black;
+  display: flex;
+  flex-wrap: wrap;
+  width: 400px;
+  height: 400px;
+  margin: auto;
+}
+
+.grid-div {
+  border: 0px solid red;
+  border-collapse: collapse;
+}
+
+.grid-div:hover {
+  background-color: aqua;
+}
