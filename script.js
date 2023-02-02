@@ -26,8 +26,10 @@ body.appendChild(container);
 
 const gribular = document.querySelectorAll(".grid-div");
 
+// addEventListener("mouseenter")
+
 gribular.forEach((grib) => {
-  grib.addEventListener("mousemove", () => {
+  grib.addEventListener("mouseenter", () => {
     const colors = [
       "black",
       "silver",

@@ -17,7 +17,3 @@ body {
   border: 0px solid red;
   border-collapse: collapse;
 }
-
-.grid-div:hover {
-  background-color: darkslateblue;
-}
